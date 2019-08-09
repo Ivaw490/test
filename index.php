@@ -9,9 +9,7 @@
 include "Highlight/Highlight.php";
 
 $str = file_get_contents("Highlight/text");
-
 $a = new Highlight();
 
 echo "Было: <br>" . $str;
-
 echo "<br><br>Стало: <br>" . $a->highlightNicknames($str);
