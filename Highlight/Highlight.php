@@ -7,7 +7,7 @@
  */
 
 class Highlight{
-    private $regx = "/(^|\s)(@[^\d^\W^_][[\da-zA-Z]+)($|\s)/"; //шаблон для поиска
+    private $regx = "/(^|\s)(@[a-zA-Z][[\da-zA-Z]+)($|\s)/"; //шаблон для поиска
     private $replacement = '${1}<b>${2}</b>${3}'; // шаблон для замены
 
     protected function getRegx(){
