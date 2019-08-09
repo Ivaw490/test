@@ -6,9 +6,9 @@
  * Time: 15:04
  */
 
-include "Highlight.php";
+include "Highlight/Highlight.php";
 
-$str = file_get_contents("text");
+$str = file_get_contents("Highlight/text");
 
 $a = new Highlight();
 
